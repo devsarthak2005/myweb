@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body 
+    {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: url('https://source.unsplash.com/1600x900/?computer') center/cover no-repeat fixed;
+      background-color: #f8f9fa; 
+      color: #495057; 
+    }
+
+    .login-form {
+      background-color: rgb(96, 108, 117); 
+      padding: 30px;
+      align:center;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      color: rgb(64, 128, 128); 
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-form">
+      <h2 style="color: antiquewhite;">Login</h2>
+      <form action="Login" method="post">
+        <div class="form-group">
+          <label for="email" style="color: aliceblue;">email id:</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password" style="color: aliceblue;">Password:</label>
+          <input type="password" id="password" name="password" class="form-control" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
+      </form>
+      <div class="text-center mt-3">
+        <p style="color: beige;">Don't have an account? <a href="register.html" style="color: wheat;">Register here</a></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
